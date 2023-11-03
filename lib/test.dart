@@ -1,7 +1,14 @@
+import 'package:belajar_flutter/Listview.dart';
+import 'package:belajar_flutter/allInOne.dart';
 import 'package:belajar_flutter/button.dart';
 import 'package:belajar_flutter/dateAndTime.dart';
 import 'package:belajar_flutter/dialog.dart';
 import 'package:belajar_flutter/gambar.dart';
+import 'package:belajar_flutter/griding.dart';
+import 'package:belajar_flutter/row_colum.dart';
+import 'package:belajar_flutter/smngtBljr.dart';
+import 'package:belajar_flutter/transformer.dart';
+import 'package:belajar_flutter/tumpuk.dart';
 import 'package:flutter/material.dart';
 
 class test extends StatelessWidget {
@@ -18,7 +25,7 @@ class test extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: MyHomePage(title: 'Contoh Date and Picker',),
+      home: const gritviu(),
       darkTheme: ThemeData.dark(),
     );
   }
