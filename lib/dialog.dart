@@ -7,21 +7,23 @@ class dialogWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dialog"),
+        title: const Text("Dialog"),
         backgroundColor: Colors.blueAccent,
       ),
-      body: MyLayout(),
+      body: const MyLayout(),
     );
   }
 }
 
 class MyLayout extends StatelessWidget {
+  const MyLayout({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       child: ElevatedButton(
-        child: Text('Show alert'),
+        child: const Text('Show alert'),
         onPressed: () {
           showAlertDialog(context);
         },
@@ -32,16 +34,16 @@ class MyLayout extends StatelessWidget {
 
 showAlertDialog(BuildContext context) {
   Widget okButton = Padding(
-    padding: EdgeInsetsDirectional.symmetric(horizontal: 8),
+    padding: const EdgeInsetsDirectional.symmetric(horizontal: 8),
     child: ElevatedButton(
-      child: Text("OK"),
+      child: const Text("OK"),
       onPressed: () {},
     ),
   );
 
   AlertDialog alert = AlertDialog(
-    title: Text("Alert!"),
-    content: Text("Pesan ini adalah pesan yang dipesan oleh pesanannya pesan"),
+    title: const Text("Alert!"),
+    content: const Text("Pesan ini adalah pesan yang dipesan oleh pesanannya pesan"),
     actions: [
       okButton,
     ],

@@ -32,6 +32,12 @@ dependencies:
   flutter:
     sdk: flutter
 
+  camera: ^0.10.5+9
+  flutter_face_api: ^6.1.0
+  flutter_face_core: ^5.2.0
+  image_picker: ^1.0.7
+  liveness_detection_flutter_plugin: ^0.0.4
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -47,6 +53,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_bloc: ^8.1.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

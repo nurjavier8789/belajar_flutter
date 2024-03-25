@@ -6,9 +6,9 @@ class textBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Alignment"),),
+      appBar: AppBar(title: const Text("Alignment"),),
       body: Container(
-        margin: EdgeInsets.all(50),
+        margin: const EdgeInsets.all(50),
         height: 200,
         width: 200,
         alignment: Alignment.center,

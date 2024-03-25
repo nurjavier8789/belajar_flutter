@@ -6,7 +6,7 @@ class allInclude extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("All In One!!"),),
+      appBar: AppBar(title: const Text("All In One!!"),),
       body: ListView(
         children: [
           Container(
@@ -28,7 +28,7 @@ class allInclude extends StatelessWidget {
           Row(
             children: [
               Container(
-                margin: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
                 height: 200,
                 width: 200,
                 alignment: Alignment.center,
@@ -45,7 +45,7 @@ class allInclude extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.all(50),
+            margin: const EdgeInsets.all(50),
             height: 200,
             width: 200,
             alignment: Alignment.center,
@@ -53,7 +53,7 @@ class allInclude extends StatelessWidget {
             child: const Text("Semangat belajar!!", style: TextStyle(fontSize: 20, color: Colors.white),),
           ),
           Container(
-            margin: EdgeInsets.all(50),
+            margin: const EdgeInsets.all(50),
             height: 200,
             width: 200,
             alignment: Alignment.center,
@@ -61,7 +61,7 @@ class allInclude extends StatelessWidget {
             child: const Text("Semangat belajar!!", style: TextStyle(fontSize: 20, color: Colors.white),),
           ),
           Container(
-            margin: EdgeInsets.all(50),
+            margin: const EdgeInsets.all(50),
             height: 200,
             width: 200,
             alignment: Alignment.center,
@@ -69,7 +69,7 @@ class allInclude extends StatelessWidget {
             child: const Text("Semangat belajar!!", style: TextStyle(fontSize: 20, color: Colors.white),),
           ),
           Container(
-            margin: EdgeInsets.all(50),
+            margin: const EdgeInsets.all(50),
             height: 200,
             width: 200,
             alignment: Alignment.center,

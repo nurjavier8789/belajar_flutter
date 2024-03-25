@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:stroke_text/stroke_text.dart';
 
 class button extends StatelessWidget {
   const button({super.key});
@@ -13,13 +12,13 @@ class button extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
         backgroundColor: Colors.pinkAccent,
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 0, 195, 255),
-        title: Text("Image Page"),
+        backgroundColor: const Color.fromARGB(255, 0, 195, 255),
+        title: const Text("Image Page"),
       ),
     );
   }

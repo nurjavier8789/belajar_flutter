@@ -1,34 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class contain extends StatelessWidget {
   const contain({super.key});
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(title: Text("CONTOH BUTTON"),),
-        body: Container(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white,
-            ),
-            onPressed: () {},
-            child: const Text(
-              "Button",
-              style: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'Torus',
-                  color: Colors.pinkAccent,
-              ),
-            ),
+    return Scaffold(
+      appBar: AppBar(title: const Text("Contoh Container"),),
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.blueAccent,
+          border: Border.all(
+            color: Colors.white,
+            width: 8
           ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        transform: Matrix4.rotationZ(-0.1),
+        margin: EdgeInsets.all(60),
+        height: 200,
+        width: 200,
+        alignment: Alignment.center,
+        child: const Text(
+          "Container Test",
         ),
       ),
-      darkTheme: ThemeData.dark(),
     );
   }
 }

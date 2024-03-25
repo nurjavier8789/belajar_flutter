@@ -8,14 +8,14 @@ class lisviw extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: Text("ListView"),
+        title: const Text("ListView"),
       ),
       body: ListView(
         children: [
           Container(
             color: Colors.green,
             alignment: Alignment.topLeft,
-            child: Text(
+            child: const Text(
                 "ListView widget digunanakan untuk menampilkan data dalam bentuk list dan jika datanya melebihi dari render box maka halaman tersebut dapat di scroll.",
               style: TextStyle(fontSize: 30, color: Colors.white),
             ),
@@ -23,22 +23,19 @@ class lisviw extends StatelessWidget {
           Container(
             color: Colors.red,
             alignment: Alignment.topLeft,
-            child: Text(
+            height: 300,
+            child: const Text(
                 "ListView widget digunanakan untuk menampilkan data dalam bentuk list dan jika datanya melebihi dari render box maka halaman tersebut dapat di scroll.",
               style: TextStyle(fontSize: 30, color: Colors.white),
             ),
-            height: 400,
-            width: 300,
           ),
           Container(
             color: Colors.deepPurple,
             alignment: Alignment.topLeft,
-            child: Text(
+            child: const Text(
                 "ListView widget digunanakan untuk menampilkan data dalam bentuk list dan jika datanya melebihi dari render box maka halaman tersebut dapat di scroll.",
               style: TextStyle(fontSize: 30, color: Colors.white),
             ),
-            height: 200,
-            width: 200,
           ),
         ],
       ),
